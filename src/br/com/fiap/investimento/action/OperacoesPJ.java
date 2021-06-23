@@ -4,6 +4,7 @@ public class OperacoesPJ {
 
 	public void aplicar() {
 		System.out.println("PJ - Aplicação executada com sucesso");
+		System.out.println("Token gerado com sucesso");
 	}
 	
 	public void resgatarParcial() {

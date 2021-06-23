@@ -5,8 +5,8 @@ public class OperacoesPF {
 	
 	public void aplicar() {
 		System.out.println("PF - Aplicação executada com sucesso");
+		System.out.println("Token gerado com sucesso");
 	}
-	
 	
 	public void resgatarTotal() {
 		System.out.println("PF - Resgate Total executado com sucesso");
