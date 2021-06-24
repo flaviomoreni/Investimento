@@ -1,15 +1,6 @@
 package br.com.fiap.investimento.action;
 
-public class OperacoesPJ {
-
-	public void aplicar() {
-		System.out.println("PJ - Aplicação executada com sucesso");
-		System.out.println("Token gerado com sucesso");
-	}
-	
-	public void resgatarParcial() {
-		System.out.println("PJ - Resgate Parcial executado com sucesso");
-	}
+public class OperacoesPJ extends Operacoes {
 
 	public void criarFundo() {
 		System.out.println("PJ - Fundo criado com sucesso");
