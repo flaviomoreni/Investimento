@@ -7,9 +7,9 @@ public class OperacoesPJTest {
 	public static void main(String[] args) {
 		OperacoesPJ operacoesPJ = new OperacoesPJ();
 		operacoesPJ.aplicar();
-		operacoesPJ.resgatarParcial();
-		operacoesPJ.criarFundo();
-		operacoesPJ.encerrarFundo();
+		//operacoesPJ.resgatarParcial();
+		//operacoesPJ.criarFundo();
+		//operacoesPJ.encerrarFundo();
 	}
 	
 }

@@ -8,8 +8,8 @@ public class OperacoesPFTest {
 		
 		OperacoesPF operacoesPF = new OperacoesPF();
 		operacoesPF.aplicar();
-		operacoesPF.resgatarTotal();
-		operacoesPF.resgatarParcial();
+		//operacoesPF.resgatarTotal();
+		//operacoesPF.resgatarParcial();
 		
 	}
 

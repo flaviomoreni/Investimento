@@ -7,6 +7,22 @@ public class Fundo {
 	private boolean ativo;
 	
 	
+	public Fundo() {
+	}
+	
+	public Fundo(int fundoId) {
+		this.fundoId = fundoId;
+	}
+	
+	public Fundo(String nome) {
+		this.nomeFundo = nome;
+	}
+	
+	public Fundo(int fundoId, String nome) {
+		this.fundoId = fundoId;
+		this.nomeFundo = nome;
+	}
+	
 	public int getFundoId() {
 		return fundoId;
 	}
@@ -25,6 +41,13 @@ public class Fundo {
 	public void setAtivo(boolean ativo) {
 		this.ativo = ativo;
 	}
+
+	
+	@Override
+	public String toString() {
+		return "Fundo [fundoId=" + fundoId + ", nomeFundo=" + nomeFundo + "]";
+	}
+	
 	
 	
 	

@@ -8,8 +8,18 @@ public class Operacoes {
 		System.out.println("Token gerado com sucesso");
 	}
 	
+	public void aplicar(String moeda) {
+		System.out.println("Converter moeda");
+		aplicar();
+	}
+	
+	
+	
 	public void resgatarParcial() {
 		System.out.println("Geral - Resgate Parcial executado com sucesso");
 	}
+	
+	
+	
 	
 }
