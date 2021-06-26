@@ -18,8 +18,10 @@ public class InvestidorPJDAO implements GenericDAO, GenericConsultaDAO {
 		System.out.println("SELECT * FROM investidor WHERE ...;");
 	}
 	
-	public void buscarTodos () {
+	public void buscarTodos() {
 		System.out.println("SELECT * FROM ...;");
 	}
+	
+	
 	
 }
