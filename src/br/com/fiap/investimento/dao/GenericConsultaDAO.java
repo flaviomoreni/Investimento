@@ -1,6 +1,6 @@
 package br.com.fiap.investimento.dao;
 
-public interface GenericConsultaDAO {
+public interface GenericConsultaDAO  {
 
 	public void consultarPorId();
 	

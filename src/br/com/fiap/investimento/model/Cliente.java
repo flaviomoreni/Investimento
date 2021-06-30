@@ -1,9 +1,9 @@
 package br.com.fiap.investimento.model;
 
-public class Cliente {
+public class Cliente implements Comparable<Cliente> {
 	
 	private int clienteId;
-	private String cpf;
+	private String cpf = "";
 	private String nome;
 	private String email;
 	
@@ -52,6 +52,31 @@ public class Cliente {
 		return "Cliente [clienteId=" + clienteId + ", cpf=" + cpf + ", nome=" + nome + ", email=" + email + "]";
 	}
 	
+	
+	@Override
+	public boolean equals(Object obj) {
+		boolean retorno = true;
+		if (obj instanceof Cliente) {
+			Cliente clienteComparacao = (Cliente) obj;
+			if ( ! this.nome.equals(clienteComparacao.getNome())) {
+				retorno = false;
+			}
+			
+			//if ( ! this.cpf.equals(clienteComparacao.getCpf())) {
+			//	retorno = false;
+			//}
+		}
+		
+		return retorno;
+	}
+
+	
+	@Override
+	public int compareTo(Cliente outro) {
+		int primary = nome.compareTo(outro.nome);
+	    return primary != 0 ? primary
+	                        : cpf.compareTo(outro.cpf);
+	}
 	
 	
 	
