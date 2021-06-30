@@ -1,6 +1,6 @@
 package br.com.fiap.investimento.dao;
 
-public class InvestidorPJDAO implements GenericDAO, GenericConsultaDAO {
+public class InvestidorPJDAO implements GenericDAO {
 	
 	public void cadastrar() {
 		System.out.println("INSERT INTO investidor ...;");

@@ -8,4 +8,8 @@ public interface GenericDAO {
 	
 	public void alterar();
 	
+	public void consultarPorId();
+	
+	public void buscarTodos();
+	
 }

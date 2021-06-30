@@ -22,10 +22,4 @@ public class FundoDAO implements GenericDAO {
 		System.out.println("SELECT fundoId, nomeFundo, ativo FROM fundo;");
 	}
 	
-	public void buscarTodos(String nome) {
-		
-	}
-	
-	
-
 }
