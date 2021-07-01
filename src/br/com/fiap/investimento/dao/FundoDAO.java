@@ -1,5 +1,11 @@
 package br.com.fiap.investimento.dao;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+import br.com.fiap.investimento.model.Fundo;
+
 public class FundoDAO implements GenericDAO {
 
 	public void cadastrar() {
@@ -20,6 +26,28 @@ public class FundoDAO implements GenericDAO {
 	
 	public void buscarTodos() {
 		System.out.println("SELECT fundoId, nomeFundo, ativo FROM fundo;");
+	}
+	
+	public List<Fundo> listarTodos() {
+		
+		/*
+		List -> Interface
+			ArrayList -> Implementação
+			LinkedList -> Implementação
+		*/
+		
+		// Processamento
+		System.out.println("SELECT fundoId, nomeFundo, ativo FROM fundo;");
+		
+		List<Fundo> fundos = new ArrayList<Fundo>();
+		fundos.add( new Fundo("Fundo 1") );
+		fundos.add( new Fundo("Fundo 2") );
+		fundos.add( new Fundo("Fundo 3") );
+		fundos.add( new Fundo("Fundo 4") );
+		fundos.add( new Fundo("Fundo 5") );
+		
+		// Saída - return
+		return fundos;
 	}
 	
 }

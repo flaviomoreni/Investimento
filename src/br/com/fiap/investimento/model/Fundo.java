@@ -49,6 +49,19 @@ public class Fundo {
 	}
 	
 	
+	@Override
+	public boolean equals(Object obj) {
+		boolean retorno = false;
+		
+		if(obj instanceof Fundo) {
+			Fundo outroFundo = (Fundo) obj;
+			if ( this.nomeFundo.equals(outroFundo.getNomeFundo()) ) {
+				retorno = true;
+			}
+		}
+		
+		return retorno;
+	}
 	
 	
 }
