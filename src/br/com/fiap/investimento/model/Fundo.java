@@ -1,6 +1,6 @@
 package br.com.fiap.investimento.model;
 
-public class Fundo {
+public class Fundo implements Comparable<Fundo> {
 
 	private int fundoId;
 	private String nomeFundo;
@@ -62,6 +62,15 @@ public class Fundo {
 		
 		return retorno;
 	}
+
+	
+	@Override
+	public int compareTo(Fundo outro) {
+		return this.nomeFundo.compareTo(outro.nomeFundo);
+	}
+
+	
+	
 	
 	
 }

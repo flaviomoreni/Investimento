@@ -30,14 +30,8 @@ public class FundoDAO implements GenericDAO {
 	
 	public List<Fundo> listarTodos() {
 		
-		/*
-		List -> Interface
-			ArrayList -> Implementação
-			LinkedList -> Implementação
-		*/
-		
 		// Processamento
-		System.out.println("SELECT fundoId, nomeFundo, ativo FROM fundo;");
+		System.out.println("SELECT fundoId, nomeFundo, ativo FROM fundo ORDER BY nomeFundo;");
 		
 		List<Fundo> fundos = new ArrayList<Fundo>();
 		fundos.add( new Fundo("Fundo 1") );
