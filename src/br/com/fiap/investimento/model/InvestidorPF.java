@@ -29,6 +29,9 @@ public class InvestidorPF extends Investidor {
 				+ ", getNomeInvestidor()=" + getNomeInvestidor() + "]";
 	}
 	
+	//equal
 	
+	//compareTo
 	
+	//hashCode
 }

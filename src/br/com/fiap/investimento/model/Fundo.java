@@ -64,10 +64,12 @@ public class Fundo implements Comparable<Fundo> {
 	}
 
 	
+	
 	@Override
 	public int hashCode() {
 		return this.fundoId;
 	}
+	
 	
 	@Override
 	public int compareTo(Fundo outro) {
